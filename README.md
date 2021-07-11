@@ -1,6 +1,8 @@
 This project was bootstrapped with
 [Create React App](https://github.com/facebook/create-react-app).
 
+The project was made using typescript and chakra UI
+
 ## Available Scripts
 
 In the project directory, you can run:
