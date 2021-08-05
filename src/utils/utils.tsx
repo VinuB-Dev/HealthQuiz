@@ -3,12 +3,11 @@ type SelectedOption = {
 }
 
 export function setOptionSelected(QuestionNumber:number, OptionSelected:SelectedOption, option:number) {
-  console.log(OptionSelected);
   OptionSelected[QuestionNumber] = option;
   return OptionSelected;
 }
 
-export function checkAnswers(answers:number[], options:number[]) {
+export function checkAnswers(answers:number[], options:{[QuestionNumber: number]:number}) {
   return Object.values(options).reduce((score, option, index) => {
     return (score = option === answers[index] ? (score = score + 10) : score);
   }, 0);
