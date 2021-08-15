@@ -13,6 +13,7 @@ export default function QuizBox() {
           return (
             <Box key={eachQuiz._id} maxW="sm" borderRadius="lg" overflow="hidden" boxShadow="dark-lg">
               <Image height="15rem" width="fit-content" src={eachQuiz.image} />
+              <div>{eachQuiz.name}</div>
               <Button
                 m="2"
                 colorScheme="teal"
